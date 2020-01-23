@@ -13,4 +13,5 @@ test('handles user input', async () => {
 
   expect(window.prompt).toHaveBeenCalledWith('Please provide input');
   expect(console.log).toHaveBeenCalledWith('input from the user');
+  expect(getByText(/input from the user/i)).toBeInTheDocument();
 });
