@@ -11,7 +11,8 @@ function App() {
         <p>
           My codelab app!
         </p>
-        <TextInput/>
+        <TextInput promptText="Name?"/>
+        <TextInput promptText="Hometown?"/>
       </header>
     </div>
   );

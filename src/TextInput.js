@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-function TextInput() {
+function TextInput({promptText}) {
 
- const [text, setText] = useState("");
+  const [text, setText] = useState("");
 
   function getUserInput() {
-      const promptResponse = prompt("Please provide input");
+      const promptResponse = prompt(promptText);
       console.log(promptResponse);
       setText(promptResponse);
   }
@@ -12,7 +12,7 @@ function TextInput() {
   return (
     <p>
     <button onClick={() => getUserInput()}>
-      Button
+      {promptText}
     </button>
     {text}
     </p>
