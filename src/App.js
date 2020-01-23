@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TextInput from './TextInput.js';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <p>
           My codelab app!
         </p>
+        <TextInput/>
       </header>
     </div>
   );
